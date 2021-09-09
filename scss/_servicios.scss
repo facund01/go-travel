@@ -1,0 +1,22 @@
+#servicios {
+    .encabezado__fondo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.servicios__items {
+    .fas {
+        color: $colorPrincipal;
+        font-size: 2.5rem;
+        background-color: rgba(252, 134, 33, 0.1);
+        line-height: 90px;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+    }
+    h3 {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,160 @@
+$colorPrincipal: #fc8621;
+$limite: 8;
+$unidad: 16px;
+@import "header";
+@import "nosotros";
+@import "destinos";
+@import "banner";
+@import "servicios";
+@import "contacto";
+@import "footer";
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+@for $i from 1 to $limite {
+
+    .m-#{$i} {
+        margin: $i * $unidad;
+    }
+
+    .p-#{$i} {
+        padding: $i * $unidad;
+    }
+}
+
+/* ----- Accordion ----- */
+
+.accordion-item {
+    font-size: 1.10rem;
+    h2 {
+        button {
+            font-size: 1.30rem;
+        }
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: #7a7a7a;
+    font-weight: bold;
+    background: #fff;
+}
+
+/* ----- Fin Accordion ----- */
+
+/* ----- Responsive ----- */
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        .nav-link {
+            font-size: 1.5rem;
+        }
+        &__text {
+            h1 {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    #historia {
+        p {
+            font-size: 1.25rem;
+        }
+    }
+
+    .encabezado {
+        &__fondo {
+            font-size: 3.75rem;
+        }
+        &__subtitulo {
+            font-size: 1.50rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .header {
+        .nav-link {
+            font-size: 1rem;
+        }
+        .navbar-brand {
+            img {
+                width: 175px;
+            }
+        }
+        &__text {
+            h1 {
+                font-size: 3rem;
+                text-align: center;
+            }
+            p {
+                display: none;
+            }
+        }
+    }
+
+
+    #historia,
+    #mision {
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .encabezado {
+        &__fondo {
+            font-size: 3rem;
+        }
+        &__subtitulo {
+            font-size: 1rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .accordion-item {
+        font-size: .90rem;
+        h2 {
+            button {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #banner {
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    .formulario {
+        &__item {
+            font-size: 1rem;
+        }
+        button {
+            font-size: .85rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
+        &__lista {
+            font-size: 1rem;
+        }
+    }
+
+}
+
+/* ----- Fin Responsive ----- */

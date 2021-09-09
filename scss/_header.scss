@@ -1,0 +1,56 @@
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(30, 24, 4, .4), rgba(4, 9, 30, .4)), url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .navbar-brand {
+        img {
+            width: 250px;
+        }
+    }
+    .nav-link {
+        font-size: 1.3rem;
+        color: white !important;
+        transition: .5s;
+        &:hover {
+            color: $colorPrincipal !important;
+        }
+        &::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: $colorPrincipal;
+            display: block;
+            margin: auto;
+            transition: .5s;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+    &__text {
+        color: white;
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1 {
+            font-size: 4.5rem;
+            font-weight: bold;
+        }
+        &--color {
+            color: $colorPrincipal;
+            display: block;
+        }
+        p {
+            font-size: 1.25rem;
+            margin-top: 25px;
+            span {
+                display: block;
+            }
+        }
+    }
+}

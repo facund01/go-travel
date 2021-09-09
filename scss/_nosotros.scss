@@ -1,0 +1,38 @@
+#historia {
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+#mision {
+    p {
+        font-size: 1.25rem;
+    }
+    img {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 550px;
+    }
+}
+
+.encabezado {
+    position: relative;
+    &__fondo {
+        position: absolute;
+        z-index: -1;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 5rem;
+        color: #efefef;
+        line-height: 1;
+    }
+    &__subtitulo {
+        color: $colorPrincipal;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+    }
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
