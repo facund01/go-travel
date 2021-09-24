@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   min-height: 100vh;
   width: 100%;
@@ -471,6 +472,54 @@ body {
 }
 
 /* ----- Fin Accordion ----- */
+/* ----- Próximamente ----- */
+#proximamente {
+  min-height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 24, 4, 0.5)), to(rgba(4, 9, 30, 0.5))), url(../images/playa.jpg);
+  background-image: linear-gradient(rgba(30, 24, 4, 0.5), rgba(4, 9, 30, 0.5)), url(../images/playa.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#proximamente .proximamente__text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#proximamente .proximamente__text h2 {
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+
+#proximamente .proximamente__text p {
+  font-size: 1.5rem;
+}
+
+#proximamente .proximamente__text a {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #efba6c;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#proximamente .proximamente__text a:hover {
+  background-color: #fc8621;
+}
+
+/* ----- Fin Próximamente ----- */
 /* ----- Responsive ----- */
 @media screen and (max-width: 768px) {
   .header .nav-link {
@@ -491,6 +540,16 @@ body {
   .encabezado h3 {
     font-size: 2rem;
   }
+  #proximamente .proximamente__text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  #proximamente .proximamente__text p {
+    font-size: 1.25rem;
+  }
+  #proximamente .proximamente__text a {
+    font-size: 1.10rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -507,8 +566,7 @@ body {
   .header__text p {
     display: none;
   }
-  #historia p,
-  #mision p {
+  #historia p, #mision p {
     font-size: 1rem;
   }
   .encabezado__fondo {
@@ -546,6 +604,16 @@ body {
   }
   .formulario__lista {
     font-size: 1rem;
+  }
+  #proximamente .proximamente__text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  #proximamente .proximamente__text p {
+    font-size: 1rem;
+  }
+  #proximamente .proximamente__text a {
+    font-size: 0.80rem;
   }
 }
 
