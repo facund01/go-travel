@@ -13,3 +13,7 @@ A su vez es un proyecto para el curso de Coder House, Desarrollo Web - Comisión
 - CSS
 - SASS
 - Bootstrap v5
+
+## SEO
+
+Esta página fue optimizada con el objetivo de obtener mejores resultados a la hora de las busquedas mediante la implementación de palabras claves, una buena estructuración del código e imágenes comprimidas para un correcto funcionamiento de la página.
